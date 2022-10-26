@@ -1,0 +1,9 @@
+---
+- name: "Check access"
+  hosts: all
+  tasks:
+  - name: "Check server"
+    vars:
+      - var1: "test"
+    command: uptime 
+  become: true
