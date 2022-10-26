@@ -17,10 +17,12 @@
         name:
           - yum-utils
       become: true
+      when: "ansible_distribution|lower == 'redhat'"
 
     - name: "Initialize RHEL servers | Install hashicorp repo"
       command: sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
       become: true
+      when: "ansible_distribution|lower == 'redhat'"
 
     - name: "Initialize RHEL servers| Install vault and consul"
       package:
@@ -28,5 +30,6 @@
           - vault
           - consul
       become: true
+      when: "ansible_distribution|lower == 'redhat'"
 
 
