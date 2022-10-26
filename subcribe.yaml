@@ -14,8 +14,8 @@
 
     - name: "Initialize RHEL servers| install mandatory packages"
       package:
-      name:
-        - yum-utils
+        name:
+          - yum-utils
       become: true
 
     - name: "Initialize RHEL servers | Install hashicorp repo"
@@ -24,9 +24,9 @@
 
     - name: "Initialize RHEL servers| Install vault and consul"
       package:
-      name:
-        - vault
-        - consul
+        name:
+          - vault
+          - consul
       become: true
 
 
