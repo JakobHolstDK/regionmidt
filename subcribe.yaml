@@ -1,0 +1,32 @@
+---
+- name: "Initialize RHEL servers"
+  hosts: all
+  tasks:
+  - name: "Initialize RHEL servers | Subcribe"
+    command: "subscription-manager register --org=14498519 --activationkey=ku --force"
+    become: true
+    when: "ansible_distribution|lower == 'redhat'"
+
+  - name: "Initialize RHEL servers| Update os"
+    command: "yum update -y"
+    become: true
+    when: "ansible_distribution|lower == 'redhat'"
+
+  - name: "Initialize RHEL servers| install mandatory packages"
+    package:
+    name:
+      - yum-utils
+    become: true
+
+  - name: "Initialize RHEL servers | Install hashicorp repo"
+    command: sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    become: true
+
+  - name: "Initialize RHEL servers| Install vault and consul"
+    package:
+    name:
+      - vault
+      - consul
+    become: true
+
+
