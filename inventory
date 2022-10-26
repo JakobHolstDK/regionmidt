@@ -1,26 +1,77 @@
-coreconsul002.openknowit.com 
-demoautoexec001.openknowit.com 
-coreconsul003.openknowit.com 
-corevault001.openknowit.com 
-coreconsul001.openknowit.com 
-demoautocat001.openknowit.com 
-corebackup001.openknowit.com 
-corenetbox001.openknowit.com 
-corezabbix001.openknowit.com 
-demoautoexec002.openknowit.com 
-demoautoexec003.openknowit.com 
-demodb001.openknowit.com 
-okdmaster001.openknowit.com 
-demosso001.openknowit.com 
-okdmaster002.openknowit.com 
-okdmaster003.openknowit.com 
-okdnode002.openknowit.com 
-okdnode001.openknowit.com 
-okdnode003.openknowit.com 
-ostacknilpeter001.openknowit.com 
-swarmmaster001.openknowit.com 
-swarmworker003.openknowit.com 
-swarmworker002.openknowit.com 
-swarmworker001.openknowit.com 
-demoautohub001.openknowit.com 
-demoautoctl001.openknowit.com 
+corenetbox001 ansible_host=192.168.123.5 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautocat001 ansible_host=192.168.123.13 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdmaster002 ansible_host=192.168.123.22 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdnode003 ansible_host=192.168.123.24 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+swarmworker003 ansible_host=192.168.123.28 ansible_user=knowit ansible_python_interpreter=/usr/bin/python3 ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautohub001 ansible_host=192.168.123.17 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdmaster003 ansible_host=192.168.123.21 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+coreconsul001 ansible_host=192.168.123.11 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdnode001 ansible_host=192.168.123.23 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtdb001 ansible_host=192.168.123.33 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+corevault001 ansible_host=192.168.123.7 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtweb002 ansible_host=192.168.123.37 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+corezabbix001 ansible_host=192.168.123.9 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demodb001 ansible_host=192.168.123.18 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+coreconsul003 ansible_host=192.168.123.8 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtweb001 ansible_host=192.168.123.35 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdmaster001 ansible_host=192.168.123.12 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoexec001 ansible_host=192.168.123.10 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoctl001 ansible_host=192.168.123.14 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtweb005 ansible_host=192.168.123.36 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+swarmworker001 ansible_host=192.168.123.30 ansible_user=knowit ansible_python_interpreter=/usr/bin/python3 ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+swarmworker002 ansible_host=192.168.123.29 ansible_user=knowit ansible_python_interpreter=/usr/bin/python3 ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+okdnode002 ansible_host=192.168.123.25 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoexec002 ansible_host=192.168.123.15 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+ostacknilpeter001 ansible_host=192.168.123.26 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtweb004 ansible_host=192.168.123.31 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demosso001 ansible_host=192.168.123.19 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+midtweb003 ansible_host=192.168.123.34 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+coreconsul002 ansible_host=192.168.123.6 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+corebackup001 ansible_host=192.168.123.20 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoexec003 ansible_host=192.168.123.16 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+swarmmaster001 ansible_host=192.168.123.27 ansible_user=knowit ansible_python_interpreter=/usr/bin/python3 ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+
+[service_core]
+corenetbox001
+coreconsul001
+corevault001
+corezabbix001
+coreconsul003
+coreconsul002
+corebackup001
+
+[service_demo]
+demoautocat001
+demoautohub001
+demodb001
+demoautoexec001
+demoautoctl001
+demoautoexec002
+demosso001
+demoautoexec003
+
+[service_okd]
+okdmaster002
+okdnode003
+okdmaster003
+okdnode001
+okdmaster001
+okdnode002
+
+[service_swarm]
+swarmworker003
+swarmworker001
+swarmworker002
+swarmmaster001
+
+[service_midt]
+midtdb001
+midtweb002
+midtweb001
+midtweb005
+midtweb004
+midtweb003
+
+[service_ostack]
+ostacknilpeter001
+
