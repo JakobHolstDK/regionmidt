@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: "Initialize RHEL servers | Subcribe"
-      command: "subscription-manager register --org=14498519 --activationkey=ku --force"
+      command: "subscription-manager register --org=6207854 --activationkey=DEMO --force"
       become: true
       when: "ansible_distribution|lower == 'redhat'"
 
