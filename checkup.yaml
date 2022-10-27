@@ -5,5 +5,5 @@
   - name: "Check server"
     vars:
       - var1: "test"
-    command: uptime 
+    command: uiiptime 
   become: true
