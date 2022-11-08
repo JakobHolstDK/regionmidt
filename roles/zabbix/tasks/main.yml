@@ -1,0 +1,31 @@
+---
+- name: "ansible role zabbix client| Copy install script"
+  ansible.builtin.template:
+    src: installzabbixclient.sh.j2
+    dest: /root/installzabbixclient.sh
+    owner: root
+    group: root
+    mode: '0700'
+  become: true
+
+- name: "ansible role zabbix_client| run install script"
+  command:  /root/installzabbixclient.sh
+  become: true
+
+- name: "ansible role zabbix client| Copy zabbix agent conf"
+  ansible.builtin.template:
+    src: zabbix_agentd.conf.j2
+    dest: /etc/zabbix/zabbix_agentd.conf
+    owner: root
+    group: root
+    mode: '0644'
+  become: true
+
+
+- name: restart Start service zabbix agent, if not started
+  ansible.builtin.service:
+    name: zabbix-agent
+    state: restarted
+    enabled: yes
+  become: true
+

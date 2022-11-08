@@ -1,3 +1,27 @@
+demoautohub001 ansible_host=192.168.123.11 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver007 ansible_host=192.168.123.17 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver010 ansible_host=192.168.123.21 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoctl001 ansible_host=192.168.123.14 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver004 ansible_host=192.168.123.15 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver009 ansible_host=192.168.123.12 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demodb001 ansible_host=192.168.123.8 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+monzabbix001 ansible_host=192.168.123.6 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+monzabbixdb001 ansible_host=192.168.123.23 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+monnetbox001 ansible_host=192.168.123.25 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+monnetboxdb001 ansible_host=192.168.123.27 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demosso001 ansible_host=192.168.123.5 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoexec001 ansible_host=192.168.123.13 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautoexec002 ansible_host=192.168.123.9 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver008 ansible_host=192.168.123.18 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver006 ansible_host=192.168.123.7 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver005 ansible_host=192.168.123.20 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver002 ansible_host=192.168.123.22 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+monguacamole001 ansible_host=192.168.123.26 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+demoautocat001 ansible_host=192.168.123.10 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+knowitguaca001 ansible_host=192.168.123.24 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver003 ansible_host=192.168.123.16 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+prodserver001 ansible_host=192.168.123.19 ansible_user=knowit ansible_python_interpreter=/usr/libexec/platform-python ansible_ssh_common_args="-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no"
+
 [service_demo]
 demoautohub001
 demoautoctl001
@@ -8,16 +32,16 @@ demoautoexec002
 demoautocat001
 
 [service_prod]
-prodserver005
-prodserver004
-prodserver008
-prodserver002
-prodserver001
-prodserver010
 prodserver007
-prodserver003
-prodserver006
+prodserver010
+prodserver004
 prodserver009
+prodserver008
+prodserver006
+prodserver005
+prodserver002
+prodserver003
+prodserver001
 
 [service_mon]
 monzabbix001
@@ -26,6 +50,15 @@ monnetbox001
 monnetboxdb001
 monguacamole001
 
-[service_knowit]
-knowitguaca001
+[zabbix_client]
+prodserver001
+prodserver002
+prodserver003
+prodserver004
+prodserver005
+prodserver006
+prodserver007
+prodserver008
+prodserver009
+prodserver010
 

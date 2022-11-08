@@ -1,0 +1,11 @@
+---
+- name: "setup zabbix client "
+  hosts: [zabbix_client]
+  tasks:
+  - name: "Apply role zabbix"
+    vars:
+      - var1: "test"
+    include_role:
+      name: zabbix
+  become: true
+

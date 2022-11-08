@@ -1,0 +1,103 @@
+zabbix_export:
+  version: '6.2'
+  date: '2022-11-08T10:21:55Z'
+  host_groups:
+    -
+      uuid: 36d74c9e9ba8452c88fbe4242ef9f778
+      name: redhat
+  hosts:
+    -
+      host: prodserver001
+      name: prodserver001
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          ip: ''
+          dns: prodserver001.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+    -
+      host: prodserver002
+      name: prodserver002
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          dns: prodserver002.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+    -
+      host: prodserver003
+      name: prodserver003
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          dns: prodserver003.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+    -
+      host: prodserver004
+      name: prodserver004
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          dns: prodserver004.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+
+    -
+      host: prodserver005
+      name: prodserver005
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          dns: prodserver005.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+
+    -
+      host: prodserver006
+      name: prodserver006
+      templates:
+        -
+          name: 'Linux by Zabbix agent'
+      groups:
+        -
+          name: redhat
+      interfaces:
+        -
+          useip: 'NO'
+          dns: prodserver006.openknowit.com
+          interface_ref: if1
+      inventory_mode: DISABLED
+
+
