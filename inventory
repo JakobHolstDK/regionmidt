@@ -1,29 +1,297 @@
-[core]
-corebackup001.openknowit.com
-coreconsul001.openknowit.com
-coreconsul002.openknowit.com
-coreconsul003.openknowit.com
-corenetbox001.openknowit.com
-corevault001.openknowit.com
-corezabbix001.openknowit.com
-[midt]
-midtdb001.openknowit.com
-midtweb001.openknowit.com
-midtweb002.openknowit.com
-midtweb003.openknowit.com
-midtweb004.openknowit.com
-midtweb005.openknowit.com
-[okd]
-okdmaster001.openknowit.com
-okdmaster002.openknowit.com
-okdmaster003.openknowit.com
-okdnode001.openknowit.com
-okdnode002.openknowit.com
-okdnode003.openknowit.com
-[ostack]
-ostacknilpeter001.openknowit.com
-[swarm]
-swarmmaster001.openknowit.com
-swarmworker001.openknowit.com
-swarmworker002.openknowit.com
-swarmworker003.openknowit.com
+{
+    "_meta": {
+        "hostvars": {
+            "demoautocat001": {
+                "ansible_host": "192.168.123.10",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demoautoctl001": {
+                "ansible_host": "192.168.123.14",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demoautoexec001": {
+                "ansible_host": "192.168.123.13",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demoautoexec002": {
+                "ansible_host": "192.168.123.9",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demoautohub001": {
+                "ansible_host": "192.168.123.11",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demodb001": {
+                "ansible_host": "192.168.123.8",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "demosso001": {
+                "ansible_host": "192.168.123.5",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "knowitguaca001": {
+                "ansible_host": "192.168.123.24",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "monguacamole001": {
+                "ansible_host": "192.168.123.26",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "monnetbox001": {
+                "ansible_host": "192.168.123.25",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "monnetboxdb001": {
+                "ansible_host": "192.168.123.27",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "monzabbix001": {
+                "ansible_host": "192.168.123.6",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "monzabbixdb001": {
+                "ansible_host": "192.168.123.23",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver001": {
+                "ansible_host": "192.168.123.12",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver002": {
+                "ansible_host": "192.168.123.7",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver003": {
+                "ansible_host": "192.168.123.15",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver004": {
+                "ansible_host": "192.168.123.16",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver005": {
+                "ansible_host": "192.168.123.17",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver006": {
+                "ansible_host": "192.168.123.18",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver007": {
+                "ansible_host": "192.168.123.19",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver008": {
+                "ansible_host": "192.168.123.20",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver009": {
+                "ansible_host": "192.168.123.21",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            },
+            "prodserver010": {
+                "ansible_host": "192.168.123.22",
+                "ansible_python_interpreter": "/usr/libexec/platform-python",
+                "ansible_ssh_common_args": "-o UserKnownHostsFile=/dev/null -o GSSAPIAuthentication=no -o GSSAPIKeyExchange=no -o StrictHostKeyChecking=no",
+                "ansible_user": "knowit"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "automationcatalog",
+            "automationcontroller",
+            "automationhub",
+            "database",
+            "execution_nodes",
+            "guacamole",
+            "postgresserver",
+            "redhat",
+            "service_demo",
+            "service_knowit",
+            "service_mon",
+            "service_prod",
+            "sso",
+            "ungrouped",
+            "zabbixclient",
+            "zabbixserver"
+        ]
+    },
+    "automationcatalog": {
+        "hosts": [
+            "demoautocat001.openknowit.com"
+        ]
+    },
+    "automationcontroller": {
+        "hosts": [
+            "demoautoctl001.openknowit.com"
+        ]
+    },
+    "automationhub": {
+        "hosts": [
+            "demoautohub001.openknowit.com"
+        ]
+    },
+    "database": {
+        "hosts": [
+            "demodb001.openknowit.com",
+            "monnetboxdb001.openknowit.com",
+            "monzabbixdb001.openknowit.com"
+        ]
+    },
+    "execution_nodes": {
+        "hosts": [
+            "demoautoexec001.openknowit.com",
+            "demoautoexec002.openknowit.com"
+        ]
+    },
+    "guacamole": {
+        "hosts": [
+            "knowitguaca001.openknowit.com",
+            "monguacamole001.openknowit.com"
+        ]
+    },
+    "postgresserver": {
+        "hosts": [
+            "monzabbixdb001.openknowit.com"
+        ]
+    },
+    "redhat": {
+        "hosts": [
+            "demoautocat001.openknowit.com",
+            "demoautoctl001.openknowit.com",
+            "demoautoexec001.openknowit.com",
+            "demoautoexec002.openknowit.com",
+            "demoautohub001.openknowit.com",
+            "demodb001.openknowit.com",
+            "demosso001.openknowit.com",
+            "knowitguaca001.openknowit.com",
+            "monguacamole001.openknowit.com",
+            "monnetbox001.openknowit.com",
+            "monnetboxdb001.openknowit.com",
+            "monzabbix001.openknowit.com",
+            "monzabbixdb001.openknowit.com",
+            "prodserver001.openknowit.com",
+            "prodserver002.openknowit.com",
+            "prodserver003.openknowit.com",
+            "prodserver004.openknowit.com",
+            "prodserver005.openknowit.com",
+            "prodserver006.openknowit.com",
+            "prodserver007.openknowit.com",
+            "prodserver008.openknowit.com",
+            "prodserver009.openknowit.com",
+            "prodserver010.openknowit.com"
+        ]
+    },
+    "service_demo": {
+        "hosts": [
+            "demoautocat001",
+            "demoautoctl001",
+            "demoautoexec001",
+            "demoautoexec002",
+            "demoautohub001",
+            "demodb001",
+            "demosso001"
+        ]
+    },
+    "service_knowit": {
+        "hosts": [
+            "knowitguaca001"
+        ]
+    },
+    "service_mon": {
+        "hosts": [
+            "monguacamole001",
+            "monnetbox001",
+            "monnetboxdb001",
+            "monzabbix001",
+            "monzabbixdb001"
+        ]
+    },
+    "service_prod": {
+        "hosts": [
+            "prodserver001",
+            "prodserver002",
+            "prodserver003",
+            "prodserver004",
+            "prodserver005",
+            "prodserver006",
+            "prodserver007",
+            "prodserver008",
+            "prodserver009",
+            "prodserver010"
+        ]
+    },
+    "sso": {
+        "hosts": [
+            "demosso001.openknowit.com"
+        ]
+    },
+    "zabbixclient": {
+        "hosts": [
+            "prodserver001.openknowit.com",
+            "prodserver002.openknowit.com",
+            "prodserver003.openknowit.com",
+            "prodserver004.openknowit.com",
+            "prodserver005.openknowit.com",
+            "prodserver006.openknowit.com",
+            "prodserver007.openknowit.com",
+            "prodserver008.openknowit.com",
+            "prodserver009.openknowit.com",
+            "prodserver010.openknowit.com"
+        ]
+    },
+    "zabbixserver": {
+        "hosts": [
+            "monguacamole001.openknowit.com",
+            "monnetbox001.openknowit.com",
+            "monnetboxdb001.openknowit.com",
+            "monzabbix001.openknowit.com",
+            "monzabbixdb001.openknowit.com"
+        ]
+    }
+}
