@@ -3,6 +3,7 @@
   ansible.builtin.git:
     repo: 'git@github.com:JakobHolstDK/regionmidt.git'
     dest: /tmp/regionmidt
+    force: yes
     version: main
 
 - name: "addzabbixagent| check index"
