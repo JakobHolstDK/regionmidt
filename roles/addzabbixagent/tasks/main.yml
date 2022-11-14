@@ -19,7 +19,7 @@
   lineinfile:
     state: present
     path: "/tmp/regionmidt/inventory"
-    line:  "^{{ZABBIX_AGENT}}"
+    line:  "{{ZABBIX_AGENT}}"
   when: check.found == 0
 
 - name: "addzabbixagent | Define zabbixagent if undefined"
