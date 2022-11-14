@@ -29,13 +29,19 @@
 
 - name: "addzabbixagent | add indexfile"
   command: git add inventory
+  args:
+    chdir /tmp/regionmidt
   when: check.found == 0
 
 - name: "addzabbixagent | Define zabbixagent if undefined"
   command: git commit -a -m "{{ ZABBIX_AGENT }}  cliend added by automation"
+  args:
+    chdir /tmp/regionmidt
   when: check.found == 0
 
 - name: "addzabbixagent | push zabbixagent to git if new"
   command: git push
+  args:
+    chdir /tmp/regionmidt
   when: check.found == 0
 
