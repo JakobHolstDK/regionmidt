@@ -1,6 +1,6 @@
 ---
 - name: "setup zabbix client "
-  hosts: [zabbix_client]
+  hosts: [zabbix_agent]
   tasks:
   - name: "Apply role zabbix"
     vars:
