@@ -1,0 +1,12 @@
+---
+- name: "setup zabbix client "
+  hosts: localhost
+  connection: local 
+  gather_facts: False
+  tasks:
+  - name: "add zabbix client to inventory"
+    vars:
+      - ZABBIX_AGENT: "test"
+    include_role:
+      name: addzabbixagent
+

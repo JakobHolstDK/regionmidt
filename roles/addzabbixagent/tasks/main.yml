@@ -1,0 +1,31 @@
+---
+- name: "addzabbixagent| clone repo"
+  ansible.builtin.git:
+    repo: 'git@github.com:JakobHolstDK/regionmidt.git'
+    dest: /tmp/regionmidt
+    version: main
+
+- name: "addzabbixagent| check index"
+  lineinfile:
+    state: absent
+    path: "/tmp/regionmidt/inventory"
+    regexp: "^{{ZABBIX_AGENT}}"
+  check_mode: true
+  changed_when: false # This just makes things look prettier in the logs
+  register: check
+
+- name: "addzabbixagent Define zabbixagent if undefined"
+  lineinfile:
+    state: present
+    path: "/tmp/regionmidt/inventory"
+    line:  "^{{ZABBIX_AGENT}}"
+  when: check.found == 0
+
+- name: "addzabbixagent | Define zabbixagent if undefined"
+  command: git commit -a -m "{{ ZABBIX_AGENT }}  cliend added by automation"
+  when: check.found == 0
+
+- name: "addzabbixagent | push zabbixagent to git if new"
+  command: git push
+  when: check.found == 0
+
