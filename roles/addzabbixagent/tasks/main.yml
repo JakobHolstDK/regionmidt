@@ -2,7 +2,7 @@
 - name: "addzabbixagent | clean repo"
   file:
     state: absent
-    path: /tmp/regionmidt/
+    path: /tmp/regionmidt
 
 - name: "addzabbixagent| clone repo"
   ansible.builtin.git:
@@ -27,21 +27,16 @@
     line:  "{{ZABBIX_AGENT}}"
   when: check.found == 0
 
-- name: "addzabbixagent | add indexfile"
-  command: git add inventory
+- name: "addzabbixagent - autocommit"
+  command: git commit -a -m "Autocommit"
   args:
-    chdir /tmp/regionmidt
-  when: check.found == 0
-
-- name: "addzabbixagent | Define zabbixagent if undefined"
-  command: git commit -a -m "{{ ZABBIX_AGENT }}  cliend added by automation"
-  args:
-    chdir /tmp/regionmidt
+    chdir: /tmp/regionmidt/
   when: check.found == 0
 
 - name: "addzabbixagent | push zabbixagent to git if new"
   command: git push
   args:
-    chdir /tmp/regionmidt
+    chdir: /tmp/regionmidt/
   when: check.found == 0
+
 
