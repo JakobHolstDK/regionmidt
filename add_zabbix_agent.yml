@@ -1,8 +1,7 @@
 ---
 - name: "setup zabbix client "
-  hosts: localhost
-  connection: local 
-  gather_facts: False
+  hosts: midt_automater
+  gather_facts: True
   tasks:
   - name: "add zabbix client to inventory"
     vars:

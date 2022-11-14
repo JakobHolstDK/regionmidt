@@ -1,4 +1,4 @@
-[rm_automater]
+[midt_automater]
 ansible.openknowit.com
 
 [zabbix_agent]
