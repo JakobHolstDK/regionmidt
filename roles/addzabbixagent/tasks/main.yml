@@ -22,6 +22,10 @@
     line:  "{{ZABBIX_AGENT}}"
   when: check.found == 0
 
+- name: "addzabbixagent | add indexfile"
+  command: git add inventory
+  when: check.found == 0
+
 - name: "addzabbixagent | Define zabbixagent if undefined"
   command: git commit -a -m "{{ ZABBIX_AGENT }}  cliend added by automation"
   when: check.found == 0
