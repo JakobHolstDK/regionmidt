@@ -1,4 +1,9 @@
 ---
+- name: "addzabbixagent | clean repo"
+  file:
+    state: absent
+    path: /tmp/regionmidt/
+
 - name: "addzabbixagent| clone repo"
   ansible.builtin.git:
     repo: 'git@github.com:JakobHolstDK/regionmidt.git'
