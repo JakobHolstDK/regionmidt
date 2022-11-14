@@ -4,3 +4,4 @@ ansible.openknowit.com
 [zabbix_agent]
 demoautocat001.openknowit.com
 demodb001.openknowit.com
+server.openknowit.com
