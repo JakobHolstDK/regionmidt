@@ -39,7 +39,3 @@
     chdir: /tmp/regionmidt/
   when: check.found == 0
 
-- name: 
-  
-
-
